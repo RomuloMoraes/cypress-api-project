@@ -6,7 +6,8 @@
   "scripts": {
     "cy:open": "cypress open",
     "cy:run": "cypress run",
-    "test:api": "cypress run --spec cypress/e2e/api/*.cy.js"
+    "test:api": "cypress run --spec cypress/e2e/api/*.cy.js",
+    "lint": "eslint ."
   },
   "repository": {
     "type": "git",
@@ -21,8 +22,13 @@
   },
   "homepage": "https://github.com/RomuloMoraes/cypress-api-project#readme",
   "devDependencies": {
+    "@eslint/js": "^10.0.1",
     "@faker-js/faker": "^10.5.0",
     "ajv": "^8.20.0",
-    "cypress": "^15.17.0"
+    "cypress": "^15.17.0",
+    "eslint": "^10.5.0",
+    "eslint-plugin-cypress": "^6.4.1",
+    "globals": "^17.7.0",
+    "mochawesome": "^7.1.4"
   }
 }
