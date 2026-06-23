@@ -1,5 +1,7 @@
 import UserService from '../../support/api/userService'
 import { generateUserData } from '../../utils/dataGenerator'
+import { createUserSchema } from '../../schemas/createUserSchema'
+import { validateSchema } from '../../utils/schemaValidator'
 
 describe('Users API', () => {
   it('Should create user successfully', () => {
@@ -10,6 +12,8 @@ describe('Users API', () => {
         expect(response.status).to.eq(201)
         expect(response.body.message).to.eq('Cadastro realizado com sucesso')
         expect(response.body._id).to.exist
+
+        validateSchema(createUserSchema, response.body)
       })
     })
   })
