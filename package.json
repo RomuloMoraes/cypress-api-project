@@ -1,0 +1,28 @@
+{
+  "name": "cypress-api-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "test:api": "cypress run --spec cypress/e2e/api/*.cy.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RomuloMoraes/cypress-api-project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/RomuloMoraes/cypress-api-project/issues"
+  },
+  "homepage": "https://github.com/RomuloMoraes/cypress-api-project#readme",
+  "devDependencies": {
+    "@faker-js/faker": "^10.5.0",
+    "ajv": "^8.20.0",
+    "cypress": "^15.17.0"
+  }
+}
